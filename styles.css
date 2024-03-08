@@ -1,0 +1,72 @@
+ 
+ body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 92%);
+ }
+ 
+ /* TARGET THE CALCULATOR CONTAINER AS A WHOLE  */
+ #calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+ }
+  /* TARGET THE DISPLAY SHOWING THE NUMBERS AT THE TOP  */
+ #display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+ }
+ 
+ /* keys is a div element that is containing all of the buttons  */
+#keys{
+    display: grid;
+    /* use the native repeat method in css to style out buttons in a grid  */
+    grid-template-columns: repeat(4, 1fr);
+    /* fr stands for fractional unit  */
+    gap: 10px;
+    padding: 25px;
+}
+
+/* STYLE ALL BUTTONS  */
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ /* WHEN ALL BUTTONS ARE BEING HOVERED OVER  */
+button:hover {
+    background: hsl(0, 0%, 40%);
+}
+/* WHEN BUTTONS ARE CLICKED  */
+button:active {
+    background: hsl(0, 0%, 50%);
+}
+
+/* TARGET THE OPERATOR BUTTONS  */
+.operator-btn {
+    background-color: orange;
+}
+/* WHEN OPERATOR BUTTONS ARE HOVERED OVER  */
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+/* CHANGE OPERATOR BUTTON COLOR WHEN CLICKED  */
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
